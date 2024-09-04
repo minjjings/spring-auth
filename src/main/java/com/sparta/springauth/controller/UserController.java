@@ -38,15 +38,15 @@ public class UserController {
         return "signup";
     }
 
-    @PostMapping("/user/login")
-    public String login(LoginRequestDto loginRequestDto,
-                        HttpServletResponse res) {
-        try {
-            userService.login(loginRequestDto,res);
-        } catch (Exception e) {
-            return "redirect:/api/user/login-page?error";
-        }
-
-        return "redirect:/";
-    }
+//    @PostMapping("/user/login")
+//    public String login(LoginRequestDto loginRequestDto,
+//                        HttpServletResponse res) {
+//        try {
+//            userService.login(loginRequestDto,res);
+//        } catch (Exception e) {
+//            return "redirect:/api/user/login-page?error";
+//        }
+//
+//        return "redirect:/";
+//    }
 }
